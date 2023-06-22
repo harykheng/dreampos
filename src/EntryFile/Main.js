@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import {
-  BrowserRouter as Router,
+  BrowserRouter,
   Route,
   Switch,
-  HashRouter,
+  HashRouter as Router,
 } from "react-router-dom";
 import App from "../InitialPage/App";
 import config from "config";

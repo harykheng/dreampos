@@ -1,13 +1,15 @@
 {
+  "homepage": "https://harykheng.github.io/dreampos",
   "name": "dreampos",
   "version": "0.1.0",
-  "homepage": "",
-  "private": true,
+  "private": false,
   "scripts": {
     "start": "webpack-dev-server --mode development --inline --progress",
     "build": "webpack --mode production",
     "dev": "webpack-dev-server",
-    "production": "webpack --mode production"
+    "production": "webpack --mode production",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist"
   },
   "keywords": [
     "reactjs",
