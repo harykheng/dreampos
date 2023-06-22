@@ -18,7 +18,7 @@ import "../assets/css/style.css";
 import RightSideBar from "../components/rightSidebar";
 
 const MainApp = () => (
-  <Router basename={`${config.publicPath}`}>
+  <Router basename="/dreampos">
     <RightSideBar />
     <Switch>
       <Route path="/" component={App} />
