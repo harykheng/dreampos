@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import {
-  BrowserRouter,
+  BrowserRouter as Router,
   Route,
   Switch,
-  HashRouter as Router,
+  HashRouter,
 } from "react-router-dom";
 import App from "../InitialPage/App";
 import config from "config";
@@ -18,7 +18,7 @@ import "../assets/css/style.css";
 import RightSideBar from "../components/rightSidebar";
 
 const MainApp = () => (
-  <Router basename="/dreampos">
+  <Router basename={`${config.publicPath}`}>
     <RightSideBar />
     <Switch>
       <Route path="/" component={App} />
